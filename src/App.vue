@@ -1,4 +1,5 @@
 <script setup>
+import { ref } from 'vue';
 import Tutorial1 from './components/Tutorial1.vue'
 import Tutorial2 from './components/Tutorial2.vue'
 import Tutorial3 from './components/Tutorial3.vue';
@@ -8,6 +9,9 @@ import Tutorial6 from './components/Tutorial6.vue';
 import Tutorial7 from './components/Tutorial7.vue';
 import Tutorial8 from './components/Tutorial8.vue';
 import Tutorial9 from './components/Tutorial9.vue';
+import Tutorial10 from './components/Tutorial10.vue';
+
+const tutorial10property = ref('Tuğkan')
 </script>
 
 <template>
@@ -47,6 +51,10 @@ import Tutorial9 from './components/Tutorial9.vue';
         <div class="training-container">
             <h1 class="training-title">9 - Watchers</h1>
             <Tutorial9 />
+        </div>
+        <div class="training-container">
+            <h1 class="training-title">10 - Props</h1>
+            <Tutorial10 :message="tutorial10property" />
         </div>
     </div>
 </template>
