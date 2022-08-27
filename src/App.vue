@@ -1,12 +1,27 @@
 <script setup>
-import Training1 from './components/Training1.vue'
+import Tutorial1 from './components/Tutorial1.vue'
+import Tutorial2 from './components/Tutorial2.vue'
+import Tutorial3 from './components/Tutorial3.vue';
+import Tutorial4 from './components/Tutorial4.vue';
 </script>
 
 <template>
     <div class="training-list">
         <div class="training-container">
-            <h1 class="training-title">reactive & ref</h1>
-            <Training1 />
+            <h1 class="training-title">1 - Declarative Rendering</h1>
+            <Tutorial1 />
+        </div>
+        <div class="training-container">
+            <h1 class="training-title">2 - Attribute Bindings</h1>
+            <Tutorial2 />
+        </div>
+        <div class="training-container">
+            <h1 class="training-title">3 - Event Listeners</h1>
+            <Tutorial3 />
+        </div>
+        <div class="training-container">
+            <h1 class="training-title">4 - Form Bindings</h1>
+            <Tutorial4 />
         </div>
     </div>
 </template>
