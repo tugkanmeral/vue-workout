@@ -7,6 +7,7 @@ import Tutorial5 from './components/Tutorial5.vue';
 import Tutorial6 from './components/Tutorial6.vue';
 import Tutorial7 from './components/Tutorial7.vue';
 import Tutorial8 from './components/Tutorial8.vue';
+import Tutorial9 from './components/Tutorial9.vue';
 </script>
 
 <template>
@@ -42,6 +43,10 @@ import Tutorial8 from './components/Tutorial8.vue';
         <div class="training-container">
             <h1 class="training-title">8 - Lifecycle and Template Refs</h1>
             <Tutorial8 />
+        </div>
+        <div class="training-container">
+            <h1 class="training-title">9 - Watchers</h1>
+            <Tutorial9 />
         </div>
     </div>
 </template>
