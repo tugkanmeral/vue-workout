@@ -3,6 +3,7 @@ import Tutorial1 from './components/Tutorial1.vue'
 import Tutorial2 from './components/Tutorial2.vue'
 import Tutorial3 from './components/Tutorial3.vue';
 import Tutorial4 from './components/Tutorial4.vue';
+import Tutorial5 from './components/Tutorial5.vue';
 </script>
 
 <template>
@@ -22,6 +23,10 @@ import Tutorial4 from './components/Tutorial4.vue';
         <div class="training-container">
             <h1 class="training-title">4 - Form Bindings</h1>
             <Tutorial4 />
+        </div>
+        <div class="training-container">
+            <h1 class="training-title">5 - Conditional Rendering</h1>
+            <Tutorial5 />
         </div>
     </div>
 </template>
