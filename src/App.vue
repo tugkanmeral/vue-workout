@@ -5,6 +5,7 @@ import Tutorial3 from './components/Tutorial3.vue';
 import Tutorial4 from './components/Tutorial4.vue';
 import Tutorial5 from './components/Tutorial5.vue';
 import Tutorial6 from './components/Tutorial6.vue';
+import Tutorial7 from './components/Tutorial7.vue';
 </script>
 
 <template>
@@ -30,8 +31,12 @@ import Tutorial6 from './components/Tutorial6.vue';
             <Tutorial5 />
         </div>
         <div class="training-container">
-            <h1 class="training-title">5 - Conditional Rendering</h1>
+            <h1 class="training-title">6 - List Rendering</h1>
             <Tutorial6 />
+        </div>
+        <div class="training-container">
+            <h1 class="training-title">7 - Computed Property</h1>
+            <Tutorial7 />
         </div>
     </div>
 </template>
