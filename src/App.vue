@@ -6,6 +6,7 @@ import Tutorial4 from './components/Tutorial4.vue';
 import Tutorial5 from './components/Tutorial5.vue';
 import Tutorial6 from './components/Tutorial6.vue';
 import Tutorial7 from './components/Tutorial7.vue';
+import Tutorial8 from './components/Tutorial8.vue';
 </script>
 
 <template>
@@ -37,6 +38,10 @@ import Tutorial7 from './components/Tutorial7.vue';
         <div class="training-container">
             <h1 class="training-title">7 - Computed Property</h1>
             <Tutorial7 />
+        </div>
+        <div class="training-container">
+            <h1 class="training-title">8 - Lifecycle and Template Refs</h1>
+            <Tutorial8 />
         </div>
     </div>
 </template>
