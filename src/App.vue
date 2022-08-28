@@ -13,6 +13,7 @@ import Tutorial10 from './components/Tutorial10.vue';
 import Tutorial11 from './components/Tutorial11.vue';
 import Tutorial12 from './components/Tutorial12.vue';
 import Congratulations from './components/Congratulations.vue';
+import { RouterLink, RouterView } from 'vue-router';
 
 const tutorial10property = ref('Tuğkan')
 
@@ -79,6 +80,14 @@ function tutorial11RenderChildMessage(_msg) {
             <h1 class="training-title">🎉 Congratulations!</h1>
             <Congratulations />
         </div>
+        <div class="training-container">
+            <h1 class="training-title">Route</h1>
+            <RouterLink to="/">Home</RouterLink>
+            <RouterLink to="/about">About</RouterLink>
+        </div>
+    </div>
+    <div class="router-view-container">
+        <RouterView />
     </div>
 </template>
 
@@ -99,5 +108,14 @@ function tutorial11RenderChildMessage(_msg) {
 
 .training-title {
     text-decoration: underline;
+}
+
+.router-view-container {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+    padding: 10px;
+    border: solid 1px grey;
+    border-radius: 5px;
 }
 </style>
