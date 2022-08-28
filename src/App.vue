@@ -10,8 +10,14 @@ import Tutorial7 from './components/Tutorial7.vue';
 import Tutorial8 from './components/Tutorial8.vue';
 import Tutorial9 from './components/Tutorial9.vue';
 import Tutorial10 from './components/Tutorial10.vue';
+import Tutorial11 from './components/Tutorial11.vue';
 
 const tutorial10property = ref('Tuğkan')
+
+const tutorial11ChildMsg = ref(null)
+function tutorial11RenderChildMessage(_msg) {
+    tutorial11ChildMsg.value = _msg
+}
 </script>
 
 <template>
@@ -55,6 +61,11 @@ const tutorial10property = ref('Tuğkan')
         <div class="training-container">
             <h1 class="training-title">10 - Props</h1>
             <Tutorial10 :message="tutorial10property" />
+        </div>
+        <div class="training-container">
+            <h1 class="training-title">11 - Emits</h1>
+            <Tutorial11 @response="(msg) => tutorial11RenderChildMessage(msg)" />
+            <span style="color: darkgreen; font-weight: bold;">{{ tutorial11ChildMsg }}</span>
         </div>
     </div>
 </template>
