@@ -11,6 +11,7 @@ import Tutorial8 from './components/Tutorial8.vue';
 import Tutorial9 from './components/Tutorial9.vue';
 import Tutorial10 from './components/Tutorial10.vue';
 import Tutorial11 from './components/Tutorial11.vue';
+import Tutorial12 from './components/Tutorial12.vue';
 
 const tutorial10property = ref('Tuğkan')
 
@@ -66,6 +67,12 @@ function tutorial11RenderChildMessage(_msg) {
             <h1 class="training-title">11 - Emits</h1>
             <Tutorial11 @response="(msg) => tutorial11RenderChildMessage(msg)" />
             <span style="color: darkgreen; font-weight: bold;">{{ tutorial11ChildMsg }}</span>
+        </div>
+        <div class="training-container">
+            <h1 class="training-title">12 - Slots</h1>
+            <Tutorial12>
+                <span style="color: darkred; font-weight: bold;">Hello from parent!</span>
+            </Tutorial12>
         </div>
     </div>
 </template>
