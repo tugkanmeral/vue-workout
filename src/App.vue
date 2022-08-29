@@ -124,4 +124,8 @@ function tutorial11RenderChildMessage(_msg) {
     border: solid 1px grey;
     border-radius: 5px;
 }
+
+.router-link-active {
+    font-weight: bolder
+}
 </style>
