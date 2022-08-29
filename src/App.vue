@@ -82,14 +82,8 @@ function tutorial11RenderChildMessage(_msg) {
         </div>
     </div>
     <div class="router-view-container">
-        <ul>
-            <li>
-                <RouterLink to="/">Home</RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/about">About</RouterLink>
-            </li>
-        </ul>
+        <RouterLink to="/">Home</RouterLink>
+        <RouterLink to="/about">About</RouterLink>
         <br />
         <hr />
         <br />
