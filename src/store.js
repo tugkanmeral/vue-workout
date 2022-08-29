@@ -5,6 +5,9 @@ const counter = reactive({
   increment() {
     this.count++;
   },
+  decrement() {
+    this.count--;
+  },
 });
 
 export const store = reactive({

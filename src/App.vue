@@ -80,13 +80,19 @@ function tutorial11RenderChildMessage(_msg) {
             <h1 class="training-title">🎉 Congratulations!</h1>
             <Congratulations />
         </div>
-        <div class="training-container">
-            <h1 class="training-title">Route</h1>
-            <RouterLink to="/">Home</RouterLink>
-            <RouterLink to="/about">About</RouterLink>
-        </div>
     </div>
     <div class="router-view-container">
+        <ul>
+            <li>
+                <RouterLink to="/">Home</RouterLink>
+            </li>
+            <li>
+                <RouterLink to="/about">About</RouterLink>
+            </li>
+        </ul>
+        <br />
+        <hr />
+        <br />
         <RouterView />
     </div>
 </template>

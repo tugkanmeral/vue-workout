@@ -6,6 +6,7 @@ const title = ref('Home')
 </script>
 
 <template>
-    <h3>{{ title }}</h3>
+    <h3 class="page-title">{{ title }}</h3>
     <button @click="store.counter.increment">Store count increment</button>
+    <button @click="store.counter.decrement">Store count decrement</button>
 </template>
